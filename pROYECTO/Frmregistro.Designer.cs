@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmregistro));
             lblNombre = new Label();
             lblcorreoelectronico = new Label();
             lblcontraseña = new Label();
@@ -38,99 +39,154 @@
             txtcontraseña = new TextBox();
             cmbrol = new ComboBox();
             btnregresar = new Button();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(143, 339);
+            lblNombre.Font = new Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNombre.Location = new Point(429, 491);
+            lblNombre.Margin = new Padding(2, 0, 2, 0);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(163, 25);
+            lblNombre.Size = new Size(162, 22);
             lblNombre.TabIndex = 0;
             lblNombre.Text = "Nombre completo:";
             // 
             // lblcorreoelectronico
             // 
             lblcorreoelectronico.AutoSize = true;
-            lblcorreoelectronico.Location = new Point(143, 417);
+            lblcorreoelectronico.Font = new Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblcorreoelectronico.Location = new Point(429, 554);
+            lblcorreoelectronico.Margin = new Padding(2, 0, 2, 0);
             lblcorreoelectronico.Name = "lblcorreoelectronico";
-            lblcorreoelectronico.Size = new Size(158, 25);
+            lblcorreoelectronico.Size = new Size(169, 22);
             lblcorreoelectronico.TabIndex = 1;
             lblcorreoelectronico.Text = "correo electronico:";
             // 
             // lblcontraseña
             // 
             lblcontraseña.AutoSize = true;
-            lblcontraseña.Location = new Point(143, 483);
+            lblcontraseña.Font = new Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblcontraseña.Location = new Point(429, 606);
+            lblcontraseña.Margin = new Padding(2, 0, 2, 0);
             lblcontraseña.Name = "lblcontraseña";
-            lblcontraseña.Size = new Size(101, 25);
+            lblcontraseña.Size = new Size(105, 22);
             lblcontraseña.TabIndex = 2;
             lblcontraseña.Text = "Contraseña";
             // 
             // lblRol
             // 
             lblRol.AutoSize = true;
-            lblRol.Location = new Point(143, 575);
+            lblRol.Font = new Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRol.Location = new Point(429, 680);
+            lblRol.Margin = new Padding(2, 0, 2, 0);
             lblRol.Name = "lblRol";
-            lblRol.Size = new Size(41, 25);
+            lblRol.Size = new Size(42, 22);
             lblRol.TabIndex = 3;
             lblRol.Text = "Rol:";
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(557, 648);
+            btnRegistrar.BackColor = Color.ForestGreen;
+            btnRegistrar.Location = new Point(627, 822);
+            btnRegistrar.Margin = new Padding(2);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(112, 34);
+            btnRegistrar.Size = new Size(168, 58);
             btnRegistrar.TabIndex = 4;
             btnRegistrar.Text = "Registrar";
-            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.UseVisualStyleBackColor = false;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
             // txtnombre
             // 
-            txtnombre.Location = new Point(417, 340);
+            txtnombre.Location = new Point(649, 492);
+            txtnombre.Margin = new Padding(2);
             txtnombre.Name = "txtnombre";
-            txtnombre.Size = new Size(182, 31);
+            txtnombre.Size = new Size(251, 27);
             txtnombre.TabIndex = 5;
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(417, 417);
+            txtCorreo.Location = new Point(649, 554);
+            txtCorreo.Margin = new Padding(2);
             txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(182, 31);
+            txtCorreo.Size = new Size(251, 27);
             txtCorreo.TabIndex = 6;
             // 
             // txtcontraseña
             // 
-            txtcontraseña.Location = new Point(417, 500);
+            txtcontraseña.Location = new Point(649, 620);
+            txtcontraseña.Margin = new Padding(2);
             txtcontraseña.Name = "txtcontraseña";
-            txtcontraseña.Size = new Size(182, 31);
+            txtcontraseña.Size = new Size(251, 27);
             txtcontraseña.TabIndex = 7;
             // 
             // cmbrol
             // 
             cmbrol.FormattingEnabled = true;
             cmbrol.Items.AddRange(new object[] { "Administrador", "Doctora", "Recepcionista" });
-            cmbrol.Location = new Point(417, 575);
+            cmbrol.Location = new Point(649, 680);
+            cmbrol.Margin = new Padding(2);
             cmbrol.Name = "cmbrol";
-            cmbrol.Size = new Size(182, 33);
+            cmbrol.Size = new Size(251, 28);
             cmbrol.TabIndex = 8;
             // 
             // btnregresar
             // 
-            btnregresar.Location = new Point(22, 40);
+            btnregresar.BackColor = Color.ForestGreen;
+            btnregresar.Location = new Point(40, 834);
+            btnregresar.Margin = new Padding(2);
             btnregresar.Name = "btnregresar";
-            btnregresar.Size = new Size(112, 34);
+            btnregresar.Size = new Size(130, 46);
             btnregresar.TabIndex = 9;
             btnregresar.Text = "Regresar";
-            btnregresar.UseVisualStyleBackColor = true;
+            btnregresar.UseVisualStyleBackColor = false;
             btnregresar.Click += btnregresar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(196, 208);
+            label1.Name = "label1";
+            label1.Size = new Size(799, 42);
+            label1.TabIndex = 11;
+            label1.Text = "Bienvenidos al Sistema de Control de Pacientes";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1170, 175);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.cuenta;
+            pictureBox2.Location = new Point(429, 315);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(144, 123);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 12;
+            pictureBox2.TabStop = false;
             // 
             // Frmregistro
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1389, 903);
+            BackColor = Color.DarkSeaGreen;
+            ClientSize = new Size(1197, 925);
+            Controls.Add(pictureBox2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Controls.Add(btnregresar);
             Controls.Add(cmbrol);
             Controls.Add(txtcontraseña);
@@ -141,9 +197,12 @@
             Controls.Add(lblcontraseña);
             Controls.Add(lblcorreoelectronico);
             Controls.Add(lblNombre);
+            Margin = new Padding(2);
             Name = "Frmregistro";
             Text = "Frmregistro";
             Load += Frmregistro_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -160,5 +219,8 @@
         private TextBox txtcontraseña;
         private ComboBox cmbrol;
         private Button btnregresar;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

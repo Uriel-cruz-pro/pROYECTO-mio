@@ -33,14 +33,16 @@
             btnadmin = new Button();
             pictureBox1 = new PictureBox();
             label1 = new Label();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // btnusuarios
             // 
             btnusuarios.BackColor = Color.ForestGreen;
             btnusuarios.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnusuarios.Location = new Point(536, 351);
+            btnusuarios.Location = new Point(536, 456);
             btnusuarios.Margin = new Padding(2);
             btnusuarios.Name = "btnusuarios";
             btnusuarios.Size = new Size(168, 49);
@@ -53,7 +55,7 @@
             // 
             btnadmin.BackColor = Color.ForestGreen;
             btnadmin.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnadmin.Location = new Point(536, 475);
+            btnadmin.Location = new Point(536, 559);
             btnadmin.Margin = new Padding(2);
             btnadmin.Name = "btnadmin";
             btnadmin.Size = new Size(168, 50);
@@ -82,12 +84,23 @@
             label1.TabIndex = 3;
             label1.Text = "Bienvenidos al Sistema de Control de Pacientes";
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.cuenta;
+            pictureBox2.Location = new Point(548, 284);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(144, 123);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
             ClientSize = new Size(1194, 688);
+            Controls.Add(pictureBox2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(btnadmin);
@@ -97,6 +110,7 @@
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,5 +122,6 @@
         private Button btnadmin;
         private PictureBox pictureBox1;
         private Label label1;
+        private PictureBox pictureBox2;
     }
 }
